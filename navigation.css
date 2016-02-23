@@ -1,0 +1,54 @@
+.menu ul {
+	margin: 10px;
+	padding-left: 0px;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+.menu li {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-right: 5px;
+	display: inline-flex;
+}
+
+.menu a {
+	color: black;
+	display: block;
+	padding: 5px 20px;
+}
+
+.menu a:hover {
+	color: white;
+	background-color: #993399;
+}
+
+.menu a.selected{
+	color: white;
+	background-color: #771177;
+}
+
+@media(max-width:800px){
+	.menu{
+		display: table-row;
+	}
+	.menu li{
+		border-radius: 0;
+		margin: 0;
+		padding: 0;
+		display: table-cell;
+	}
+	.menu a{
+		padding: 5px;
+		margin: 0;
+	}
+}
+@media(max-width:480px){
+	.menu{
+		position: static;
+		display: block;
+	}
+	.menu li{
+		display: block;
+	}
+}
