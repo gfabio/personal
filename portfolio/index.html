@@ -8,68 +8,38 @@
 	</head>
 	<body>
 		<header>
-			<h1>Gina's Portfolio</h1>
+			<a href="index.html"><h1>Gina's Portfolio</h1></a>
 		</header>
-		
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="games.html">Games</a></li>
-				<li><a href="writing.html">Writing</a></li>
-				<li><a href="art.html">Art</a></li>
-				<li><a href="links.html">Links</a></li>
-			</ul>
-		</nav>
-		
+
 		<div class="container">
 			<aside>
-				<h2>About Me</h2>
-				<p>While I am technically majoring in Digital Media at 
-				<a href="http://www.rochester.edu/">University of Rochester</a>, I have done my utmost 
-				to turn it into a Game Design curriculum. To this end, I spent a semester in Singapore at 
-				<a href="http://www.ntu.edu.sg">Nanyang Technological University</a> to study
-				Interactive Media and game development.</p>
-				<p><a href="resume.pdf">RESUME</a></p>
-				<h3>Education</h3>
-				<ul>
-					<li>B.A. in Digital Media Studies
-						<ul><li>University of Rochester, Rochester, NY, USA</li>
-						<li>Expected May 2016</li>
-						<li>Minors in Computer Science, Japanese, and History</li></ul></li>
-					<li>Study Abroad in Interactive Media
-						<ul><li>Nanyang Technological University, Singapore</li>
-						<li>Spring 2015</li></ul></li>
-				</ul>
-				
-				<h3>Skills</h3>
-				<ul>
-					<li>Game Development, with experience with  Unity 5 (3D) and Maya 2015</li>
-					<li>Coding and Web Design, including Python, HTML, CSS, and PHP languages, Android Development, some SQL, and the WordPress system</li>
-					<li>Art and Graphic Design, with experience with Photoshop</li>
-				</ul>
+				<a href="about.html">About Me--></a>
+				<h2>Projects</h2>
+				<h3>Games</h3>
+				<p class="projlink" onclick="showRite()">The Rite</p>
+				<p class="projlink" onclick="showAster()">Aster</p>
+				<h3>Other</h3>
+				<p class="projlink" onclick="showFunk()">Uptown Funk Video</p>
 			</aside>
 		
 			<article>
-				<h2>My Work</h2>
-				<p>Intro text here</p>
-				
-				<div class="preview">
+				<div class="preview" id="therite">
 					<h3>The Rite</h3>
-					<a href="therite/web.html">
-						<img src = "images/riteplay.png">
+					<a href="../therite/web.html">
+						<img src = "../images/riteplay.png">
 					</a>
 					<p>Note: in-browser play requires Unity Web Player, which does not run in Chrome.</p>
 					<p>I developed The Rite by myself in Unity 3D in less than 48 hours for the Global 
 					GameJam 2016. The theme was "ritual". Assets were created with Maya 2015, GIMP, Paint 
 					Tool SAI, and Garageband. A couple friends provided images to use in the game; 
-					credits are on the GameJame site, linked below.
+					credits are on the GameJam site, linked below.
 					</p>
 					<a href="http://globalgamejam.org/2016/games/rite-2">GameJam site/Download</a>
 				</div>
 				
-				<div class="preview">
+				<div class="preview" id="aster">
 					<h3>Aster</h3>
-					<img src = "images/aster.png">
+					<img src = "../images/aster.png">
 					<p>I came up with the concept for Aster in March 2015, while studying abroad in 
 					Singapore at Nanyang Technological University. I developed the idea there as a final 
 					project for my History of Games class, and brought it back to University of Rochester,
@@ -87,7 +57,7 @@
 					<a href="">Download (Coming Soon)</a>
 				</div>
 				
-				<div class="preview">
+				<div class="preview" id="funk">
 					<a href="https://www.youtube.com/watch?v=f25Cwb1WN50">
 						<h3>Uptown Funk - 3D Animation</h3>
 					</a>
@@ -98,6 +68,28 @@
 				</div>
 			</article>
 			
+			
+			<script>
+			document.getElementById("therite").style.display = "block";
+			
+			function showRite() {
+				document.getElementById("therite").style.display = "block";
+				document.getElementById("aster").style.display = "none";
+				document.getElementById("funk").style.display = "none";
+			}
+			
+			function showAster() {
+				document.getElementById("therite").style.display = "none";
+				document.getElementById("aster").style.display = "block";
+				document.getElementById("funk").style.display = "none";
+			}
+			
+			function showFunk() {
+				document.getElementById("therite").style.display = "none";
+				document.getElementById("aster").style.display = "none";
+				document.getElementById("funk").style.display = "block";
+			}
+			</script>
 		</div>
 		
 		<footer>
