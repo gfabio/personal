@@ -74,7 +74,7 @@ aside ul ul{
 	border: 5px solid #fff;
 	border-radius: 5px;
 	padding: 0 10px;
-	background-color: #ffeeff;
+	background-color: #fff;
 }
 
 #therite, #aster, #funk{
@@ -86,7 +86,9 @@ aside ul ul{
 	text-align: center;
 	background-color: #fff;
 	margin: 5px 0;
-	padding: 5px 0;
+	padding: 0;
+	border: 5px solid #fff;
+	border-radius: 5px;
 }
 
 .twitter{
