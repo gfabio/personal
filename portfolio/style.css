@@ -75,6 +75,7 @@ aside ul ul{
 	border-radius: 5px;
 	padding: 0 10px;
 	background-color: #fff;
+	min-width: 620px;
 }
 
 #therite, #aster, #funk{
