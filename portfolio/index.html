@@ -8,21 +8,25 @@
 	</head>
 	<body>
 		<header>
-			<a href="index.html"><h1>Gina's Portfolio</h1></a>
+			<a href="index.html"><h1>Gina Fabio</h1></a>
 		</header>
 
 		<div class="container">
 			<aside>
-				<a href="about.html">About Me--></a>
-				<h2>Projects</h2>
-				<h3>Games</h3>
-				<p class="projlink" onclick="showRite()">The Rite</p>
-				<p class="projlink" onclick="showAster()">Aster</p>
-				<h3>Other</h3>
-				<p class="projlink" onclick="showFunk()">Uptown Funk Video</p>
+				<a class="navlink" href="index.html">Portfolio</a>
+				<a class="navlink" href="about.html">About Me</a>
+				<a class="navlink" href="resume.pdf">Resume</a>
+				
+				<a href="https://www.linkedin.com/pub/gina-fabio/b4/74/470"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Gina Fabio's LinkedIn profile" style="vertical-align:middle;" border="0"></a>
+				<a href="https://twitter.com/arete_nike"><img src="../images/TwitterLogo.png" alt="Twitter Profile" style="vertical-align:middle;"></a>
 			</aside>
 		
 			<article>
+				<p class="projlink" onclick="showAll()">All</p>
+				<p class="projlink" onclick="showGames()">Games</p>
+				<p class="projlink" onclick="showOther()">Not Games</p>
+				<p class="projlink" onclick="showPersonal()">Personal Work</p>
+				<p class="projlink" onclick="showGroup()">Group Work</p>
 				<div class="preview" id="therite">
 					<h3>The Rite</h3>
 					<a href="../therite/web.html">
@@ -65,23 +69,33 @@
 			
 			
 			<script>
-			document.getElementById("therite").style.display = "block";
+			function showAll() {
+				document.getElementById("therite").style.display = "block";
+				document.getElementById("aster").style.display = "block";
+				document.getElementById("funk").style.display = "block";
+			}
 			
-			function showRite() {
+			function showGames() {
+				document.getElementById("therite").style.display = "block";
+				document.getElementById("aster").style.display = "block";
+				document.getElementById("funk").style.display = "none";
+			}
+			
+			function showOther() {
+				document.getElementById("therite").style.display = "none";
+				document.getElementById("aster").style.display = "none";
+				document.getElementById("funk").style.display = "block";
+			}
+			
+			function showPersonal() {
 				document.getElementById("therite").style.display = "block";
 				document.getElementById("aster").style.display = "none";
 				document.getElementById("funk").style.display = "none";
 			}
 			
-			function showAster() {
+			function showGroup() {
 				document.getElementById("therite").style.display = "none";
 				document.getElementById("aster").style.display = "block";
-				document.getElementById("funk").style.display = "none";
-			}
-			
-			function showFunk() {
-				document.getElementById("therite").style.display = "none";
-				document.getElementById("aster").style.display = "none";
 				document.getElementById("funk").style.display = "block";
 			}
 			</script>

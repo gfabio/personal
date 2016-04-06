@@ -11,7 +11,7 @@ header {
 .container {
 	margin: 0 auto;
 	padding: 0 10px;
-	width: 80%;
+	width: 85%;
 	max-width: 960px;
 	display: flex;
 }
@@ -20,12 +20,12 @@ header {
 	float: right;
 }
 
-a {
+a , .projlink{
 	text-decoration: none;
 	color: #550055;
 }
 
-a:hover {
+a:hover , .projlink:hover{
 	color: #994499;
 }
 
@@ -40,9 +40,6 @@ p {
 article, aside {
 	margin: 10px 5px;
 	padding: 10px;
-	background-color: #eeddee;
-	border: 5px solid #fff;
-	border-radius: 5px;
 }
 
 article{
@@ -51,22 +48,12 @@ article{
 
 aside{
 	flex: 27%;
-	border-right: 5px solid #fff;
+	border-right: 2px solid #994499;
 }
 
 footer {
 	margin: 0 10px;
 	border-top: 2px solid #994499;
-}
-
-aside ul{
-	padding: 0px;
-	margin: 0px;
-	margin-left: 10px;
-}
-
-aside ul ul{
-	font-size: smaller;
 }
 
 .preview{
@@ -79,17 +66,26 @@ aside ul ul{
 }
 
 #therite, #aster, #funk{
-	display: none;
+	display: block;
 }
 
 .projlink{
+	display: inline;
+	border-radius: 7px 7px 2px 2px;
+}
+
+.navlink{
+	display: block;
+	border-radius: 5px;
+}
+
+.projlink, .navlink{
 	margin: auto;
 	text-align: center;
 	background-color: #fff;
 	margin: 5px 0;
 	padding: 0;
 	border: 5px solid #fff;
-	border-radius: 5px;
 }
 
 .twitter{
