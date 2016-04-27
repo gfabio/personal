@@ -62,11 +62,58 @@ footer {
 	border-radius: 5px;
 	padding: 0 10px;
 	background-color: #fff;
-	min-width: 620px;
+}
+
+.projheader{
+	margin-top: 10px;
+	width: 100%;
+	height: 200px;
+	-webkit-transition: background 1s;
+    transition: background 1s;
+	display: block;
+}
+
+#riteheader{
+	background: url("img/rite.png") no-repeat;
+}
+#riteheader:hover{
+	background: url("img/rite2.png") no-repeat;
+}
+
+#asterheader{
+	background: url("img/aster.png") no-repeat;
+}
+#asterheader:hover{
+	background: url("img/aster2.png") no-repeat;
+}
+
+#funkheader{
+	background: url("img/funk.png") no-repeat;
+}
+#funkheader:hover{
+	background: url("img/funk2.png") no-repeat;
 }
 
 #therite, #aster, #funk{
 	display: block;
+}
+
+.bannerimg{
+	margin-top: 10px;
+}
+
+.skills{
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.skills li{
+	display: inline-block;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #994499;
+	border-radius: 2px;
 }
 
 .projlink{
@@ -88,16 +135,54 @@ footer {
 	border: 5px solid #fff;
 }
 
+.divider{
+	width: 100%;
+	border-bottom: 2px solid #994499;
+}
+
 .twitter{
 	margin-top: 10px;
+}
+.devpics1{
+	float: right;
+	margin: 10px;
+	margin-right: 0px;
+}
+.devpics2{
+	float: left;
+	margin: 10px;
+	margin-left: 0px;
 }
 
 @media(max-width:800px){
 	.container {
 		display: block;
 	}
-	.container aside figure{
+	.devpics{
 		float: none;
+		margin: auto;
+	}
+	aside{
+		border-right: 0;
+		border-bottom: 2px solid #994499;
+	}
+	#riteheader{
+		background: url("img/rite2.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	#asterheader{
+		background: url("img/aster2.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	#funkheader{
+		background: url("img/funk2.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.twitter{
+		display: none;
 	}
 }
 
@@ -105,13 +190,23 @@ footer {
 	.container figure{
 		float: none;
 	}
+	.projlink{
+		display: block;
+		border-radius: 5px;
+	}
+	.projheader{
+		height: 100px;
+	}
 }
 
 @media(max-width:480px){
 	article, aside{
 		padding: 0;
 	}
-	img{
+	.bannerimg,.devpics{
 		width: 100%;
+	}
+	.projheader{
+		height: 50px;
 	}
 }
